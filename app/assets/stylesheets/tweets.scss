@@ -1,0 +1,90 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+input[type="submit"].btn-block{
+    margin:15px 0;
+}
+
+.form-control{
+    width:538px;
+    height:100px;
+    position:relative;
+    left:-145px;
+}
+
+
+.what{
+    font-size:20px;
+    position:relative;
+    top:2px;
+    left:-150px;
+}
+
+.toko{
+    position:relative;
+    left:-180px;
+}
+
+.wrapper{
+    margin-bottom:50px;
+    padding:10px 10px 20px 35px;
+    .row{
+        border-bottom:1px solid #ccc;
+        padding:5px;
+        text-align:left;
+        word-wrap:break-word;
+        
+    }
+}
+
+.back{
+    position:relative;
+    left:-175px;
+}
+
+.error_explanation div{
+    position:relative;
+    left:-150px;
+}
+
+.error_explanation ul{
+    position:relative;
+    left:-180px;
+}
+
+.btn {
+    position:relative;
+    left:-145px;
+}
+
+.tsubuyaki{
+    position:relative;
+    left:-150px;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.naiyo{
+    position:relative;
+    left:-165px;
+    font-size:30px;
+}
+
+.ichiran{
+    position:relative;
+    left:-170px;
+    font-weight:bold;
+    font-size:25px;
+}
+
+.hensyu{
+    position:relative;
+    left:-160px;
+    font-size:25px;
+}
+
+.contents{
+    position:relative;
+    top:35px;
+}

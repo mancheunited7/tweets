@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<div class="b">
+<head>
+  <title>Tweets</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+</head>
+<body>
+
+<header>
+  <ul>
+  <li><%= link_to "ホーム",root_path %></li>
+  <li><%= link_to "つぶやき",new_tweet_path %></li>
+  <li><%= link_to "つぶやき一覧",tweets_path %></li>
+  <li><img class="tweet" src="<%=asset_path "twitter.jpg"%>" width="20%"></li>
+</ul>
+</header>
+
+<%= yield %>
+
+
+<footer>
+  <p>© 2017 Copyright Keita Morita</p>
+</footer>
+</div>
+</body>
+</html>

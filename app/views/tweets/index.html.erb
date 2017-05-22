@@ -1,0 +1,13 @@
+<div class = "container">
+    <div class = "wrapper col-md-8 col-md-offset-2 col-sm-10">
+        <p><%=notice %></p>
+        <div class="ichiran">つぶやき一覧</div>
+        <% @tweets.each do |tweets| %>
+        <div class = "row">
+            <div class="contents"><%=tweets.content %></div>
+            <%= link_to "編集",edit_tweet_path(tweets.id),class:'btn btn-default btn-sm btn-success' %>
+            <%= link_to "削除",tweet_path(tweets.id),method: :delete,data:{confirm:'本当に削除しますか？'},class:'btn btn-default btn-sm btn-danger' %>
+        </div>
+        <% end %>
+    </div>
+</div>

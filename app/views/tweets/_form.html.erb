@@ -1,0 +1,18 @@
+<%= form_for(@tweets,url:choose_new_or_edit) do |f| %>
+<% if @tweets.errors.any? %>
+<div class="error_explanation">
+   <div><h2><%=@tweets.errors.count %>件のエラーがあります。</h2></div>
+
+<ul>
+    <% @tweets.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+</ul>
+</div>
+<% end %>
+
+<%= f.label :いまどうしてる？,class:'what' %>
+<%= f.text_area :content,class:'form-control'%>
+<%= f.submit 'つぶやく',class:'btn btn-primary btn-block' %>
+
+<% end %>
